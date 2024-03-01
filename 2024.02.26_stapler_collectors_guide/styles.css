@@ -9,7 +9,9 @@ body {
 	padding: 25px;
 	border: solid black 7px;
 	color: #ffffff;
-	background-image: url(conosidinestapler.jpg);
+	background-image: url(downloadk.png);
+	background-position: center;
+	background-size: 100%;
 }
 
 .main {
@@ -35,6 +37,10 @@ body {
 	display: inline-block;
 	border: solid 7px black;
 	border-top-width: 0px;
+}
+
+p a {
+	color: #000000;
 }
 
 table {
