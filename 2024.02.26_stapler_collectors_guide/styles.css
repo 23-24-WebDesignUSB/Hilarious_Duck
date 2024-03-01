@@ -7,19 +7,13 @@ body {
 	font-size: 250%;
 	text-align: center;
 	padding: 25px;
-	border: solid black 5px;
+	border: solid black 7px;
 	color: #ffffff;
 	background-image: url(conosidinestapler.jpg);
 }
 
 .main {
 	display: flex;
-	border-collapse: collapse;
-}
-
-.main div {
-	border: solid 3px black;
-	border-collapse: collapse;
 }
 
 .sidebar {
@@ -29,19 +23,18 @@ body {
 	top: 0;
 	padding: 15px;
 	display: inline-block;
-	border-collapse: collapse
 }
 
 .sidebar h1 {
 	font-size: 120%;
-
 }
 
 .content {
 	width: 85%;
-	border-top-width: 0px;
 	padding: 20px;
 	display: inline-block;
+	border: solid 7px black;
+	border-top-width: 0px;
 }
 
 table {
@@ -52,7 +45,7 @@ table, tr, th, td {
 	border: solid black 5px;
 	border-collapse: collapse;
 	padding: 8px;
-	font-size: 30px;
+	font-size: 120%;
 	text-align: center;
 	margin: 0% 15%;
 	margin-bottom: 0%;
@@ -61,6 +54,9 @@ table, tr, th, td {
 	background: #eeeeee;
 }
 
+.rating h1 {
+	text-align: center;
+}
 .rating_content h1 {
 	font-size: 250%;
 	text-align: center;
