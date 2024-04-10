@@ -1,0 +1,58 @@
+body {
+  margin: 0px;
+  background-image: linear-gradient(to bottom right, #D92121, #50BFE6); 
+}
+
+.header {
+  text-align: center;
+}
+
+.text {
+  padding: 40px;
+  text-align: left;
+}
+
+.bottom {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.bottom div {
+  display: inline;
+}
+
+.spinner {
+  font-family: "Comic Sans MS";
+  animation-name: spinny;
+  animation-duration: 0.4s;
+  animation-iteration-count: infinite;
+  text-align: center;
+  margin: 0px 150px;
+}
+
+@keyframes spinny {
+  0% {transform: rotateY(0deg) rotateX(180deg) rotateZ(30deg);}
+  20% {transform: rotateY(40deg) rotateX(200deg) rotateZ(170deg);}
+  40% {transform: rotateY(0deg) rotateX(0deg) rotateZ(240deg);}
+  60% {transform: rotateY(20deg) rotateX(70deg) rotateZ(20deg);}
+  80% {transform: rotateY(300deg) rotateX(0deg) rotateZ(330deg);}
+  0% {transform: rotateY(0deg) rotateX(180deg) rotateZ(30deg);}
+}
+
+.copyright {
+  font-size: 80%;
+  padding-left: 20px;
+  display: inline
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.gif1:hover .hidden {
+  visibility: visible;
+}
+
+
+
