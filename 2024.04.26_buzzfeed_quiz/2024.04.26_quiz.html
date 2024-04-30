@@ -1,0 +1,128 @@
+<!-- i like to leave a lil bit of breathing room at the top of my html files idk why-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>What Kind of Fruit Are You?</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<h1 class="epicheader">WHAT KIND OF FRUIT ARE YOU?</h1>
+		<hr>
+		<div class="questions">
+			<!-- each input scrolls the page on selection-->
+			<div>
+				<h2>What is your favorite season?</h2>
+				<img height="300px" src="question_one_image.webp">
+				<form>
+					<input type="radio" id="q1r1" name="q1" onclick="scrollDown()">
+					<label for="q1r1">Spring</label>
+					<input type="radio" id="q1r2" name="q1" onclick="scrollDown()">
+					<label for="q1r2">Summer</label>
+					<input type="radio" id="q1r3" name="q1" onclick="scrollDown()">
+					<label for="q1r3">Fall</label>
+					<input type="radio" id="q1r4" name="q1" onclick="scrollDown()">
+					<label for="q1r4">Winter</label>
+				</form>
+			</div>
+			<div>
+				<h2>What do you like to do in your free time?</h2>
+				<img height="300px" src="question_two_image.png">
+				<form>
+					<input type="radio" id="q2r1" name="q2" onclick="scrollDown()">
+					<label for="q2r1">Sports</label>
+					<input type="radio" id="q2r2" name="q2" onclick="scrollDown()">
+					<label for="q2r2">Hang with friends</label>
+					<input type="radio" id="q2r3" name="q2" onclick="scrollDown()">
+					<label for="q2r3">Sleep</label>
+					<input type="radio" id="q2r4" name="q2" onclick="scrollDown()">
+					<label for="q2r4">Read</label>
+					<input type="radio" id="q2r5" name="q2" onclick="scrollDown()">
+					<label for="q2r5">Videogames</label>
+				</form>
+			</div>
+			<div>
+				<h2>What is your favorite subject?</h2>
+				<img height="300px" src="question_three_image.jpg">
+				<form>
+					<input type="radio" id="q3r1" name="q3" onclick="scrollDown()">
+					<label for="q3r1">Math</label>
+					<input type="radio" id="q3r2" name="q3" onclick="scrollDown()">
+					<label for="q3r2">Science</label>
+					<input type="radio" id="q3r3" name="q3" onclick="scrollDown()">
+					<label for="q3r3">English</label>
+					<input type="radio" id="q3r4" name="q3" onclick="scrollDown()">
+					<label for="q3r4">History</label>
+					<input type="radio" id="q3r5" name="q3" onclick="scrollDown()">
+					<label for="q3r5">Art</label>
+				</form>
+			</div>
+			<div>
+				<h2>What is your favorite movie genre?</h2>
+				<img height="300px" src="Sala_de_cine.jpg">
+				<form>
+					<input type="radio" id="q4r1" name="q4" onclick="scrollDown()">
+					<label for="q4r1">Action</label>
+					<input type="radio" id="q4r2" name="q4" onclick="scrollDown()">
+					<label for="q4r2">Horror</label>
+					<input type="radio" id="q4r3" name="q4" onclick="scrollDown()">
+					<label for="q4r3">Romance</label>
+					<input type="radio" id="q4r4" name="q4" onclick="scrollDown()">
+					<label for="q4r4">Fantasy</label>
+					<input type="radio" id="q4r5" name="q4" onclick="scrollDown()">
+					<label for="q4r5">Comedy</label>
+				</form>
+			</div>
+			<div>
+				<h2>What is your favorite social media?</h2>
+				<img height="300px" src="socialmedia.jpg">
+				<form>
+					<input type="radio" id="q5r1" name="q5" onclick="scrollDown()">
+					<label for="q5r1">Snapchat</label>
+					<input type="radio" id="q5r2" name="q5" onclick="scrollDown()">
+					<label for="q5r2">Tiktok</label>
+					<input type="radio" id="q5r3" name="q5" onclick="scrollDown()">
+					<label for="q5r3">Twitter</label>
+					<input type="radio" id="q5r4" name="q5" onclick="scrollDown()">
+					<label for="q5r4">Instagram</label>
+					<input type="radio" id="q5r5" name="q5" onclick="scrollDown()">
+					<label for="q5r5">Facebook</label>
+				</form>
+			</div>
+			<div>
+				<h2>What is your favorite color?</h2>
+				<img height="300px" src="colores.jpeg">
+				<form>
+					<input type="radio" id="q6r1" name="q6" onclick="scrollDown()">
+					<label for="q6r1">Red</label>
+					<input type="radio" id="q6r2" name="q6" onclick="scrollDown()">
+					<label for="q6r2">Yellow</label>
+					<input type="radio" id="q6r3" name="q6" onclick="scrollDown()">
+					<label for="q6r3">Green</label>
+					<input type="radio" id="q6r4" name="q6" onclick="scrollDown()">
+					<label for="q6r4">Blue</label>
+				</form>
+			</div>
+			<button class="resultsbutton" onclick="showResults()">Get Results</button> 
+			<h1 class="results_header" id="results_header"><h1>
+			<p class="results_body" id="results_body"> <!--these are empty rn but they fill w the results when getresults is pressed-->
+			</p>
+		</div>
+		<p class="sources">
+			IMAGE SOURCES
+			<br><br>
+			<a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.thelivingurn.com%2Fblogs%2Fnews%2Ffall-has-arrived-interesting-facts-about-trees-during-the-fall&psig=AOvVaw3Tcg7VCMTdmv-tzR-23HDT&ust=1714235545590000&source=images&cd=vfe&opi=89978449&ved=0CBIQjhxqFwoTCJCizZen4IUDFQAAAAAdAAAAABAE">Fall Image</a>
+			<br><br>
+			<a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fphotodune.net%2Fitem%2Fclose-up-of-hands-holding-a-controller-playing-video-games%2F41061324&psig=AOvVaw1u9jZeG_171mAfVPutydfc&ust=1714237854026000&source=images&cd=vfe&opi=89978449&ved=0CBIQjhxqFwoTCIir_-av4IUDFQAAAAAdAAAAABAE">Gaming Image</a>
+			<br><br>
+			<a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dteacher%2Bchalkboard&psig=AOvVaw297h1pGJqbg-kmttsSCxkm&ust=1714238244943000&source=images&cd=vfe&opi=89978449&ved=0CBIQjhxqFwoTCICk5KCx4IUDFQAAAAAdAAAAABAE">Chalkboard Image</a>
+			<br><br>
+			<a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMovie_theater&psig=AOvVaw24nw8QVZMjbVePgEsyPQ4g&ust=1714579226549000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKCXsr-n6oUDFQAAAAAdAAAAABAE">Theater Image</a>
+			<br><br>
+			<a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fnews.miami.edu%2Fstories%2F2023%2F02%2Fis-generation-z-addicted-to-the-phone.html&psig=AOvVaw3mF7AfowURSPGvqqN2eBe7&ust=1714579289862000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCLDE4N2n6oUDFQAAAAAdAAAAABAE">Social Media Image</a>
+			<br><br>
+			<a href="https://www.finnandemma.com/blogs/news/find-your-color-palette-with-your-color-guru">Color Palette Image</a>
+		</p>
+	</body>
+</html>

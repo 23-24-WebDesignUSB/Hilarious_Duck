@@ -1,0 +1,44 @@
+/* gotta let the code breathe */
+
+
+
+
+
+
+
+
+body {
+	text-align: center;
+}
+
+.epicheader {
+	font-size: 50px;
+
+}
+
+
+.resultsbutton {
+  margin: 20px;
+  border: solid 3px black;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  transition: border 0.2s;
+}
+
+.resultsbutton:hover {
+  border: black solid 6px; /*transforms border on hover in order to make users know its a button*/
+}
+
+.results_header {
+	font-size: 35px;
+}
+
+.results_body {
+	font-size: 25px;
+}
+
+.sources {
+	font-size: 9px;
+}
