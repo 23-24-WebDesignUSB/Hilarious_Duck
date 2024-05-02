@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>JS Practice</title>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div>
+            <input type="number" placeholder="Year" id="q1r1">
+            <button onclick="document.getElementById('o1').innerHTML = graduationYear(parseInt(document.getElementById('q1r1').value))">Update</button>
+            <span id="o1"></span>
+        </div>
+        <div>
+            <input type="number" placeholder="Minutes" id="q2r1">
+            <button onclick="document.getElementById('o2').innerHTML = convertTime(parseInt(document.getElementById('q2r1').value))">Update</button>
+            <span id="o2"></span>
+        </div>
+        <div>
+            <input type="number" placeholder="Base" id="q3r1">
+            <input type="number" placeholder="Height" id="q3r2">
+            <button onclick="document.getElementById('o3').innerHTML = triangle(parseInt(document.getElementById('q3r1').value), parseInt(document.getElementById('q3r2').value))">Update</button>
+            <span id="o3"></span>
+        </div>
+        <div>
+            <input type="number" placeholder="Number 1" id="q4r1">
+            <input type="number" placeholder="Number 2" id="q4r2">
+            <button onclick="document.getElementById('o4').innerHTML = questionFour(parseInt(document.getElementById('q4r1').value), parseInt(document.getElementById('q4r2').value))">Update</button>
+            <span id="o4"></span>
+        </div>
+        <div>
+            <input type="number" placeholder="Side A" id="q5r1">
+            <input type="number" placeholder="Side B" id="q5r2">
+            <input type="number" placeholder="Side C" id="q5r3">
+            <button onclick="document.getElementById('o5').innerHTML = isValidTriangle(parseInt(document.getElementById('q5r1').value), parseInt(document.getElementById('q5r2').value), parseInt(document.getElementById('q5r3').value))">Update</button>
+            <span id="o5"></span>
+        </div>
+        <div>
+            <input placeholder="Number List: 1, 2, 3..." id="q6r1">
+            <button onclick="document.getElementById('o6').innerHTML = questionSix(document.getElementById('q6r1').value.split(', '))">Update</button>
+            <span id="o6"></span>
+        </div>
+    </body>
+</html>
