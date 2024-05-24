@@ -1,0 +1,15 @@
+button { /* spaces buttons out horizontally */
+	margin: 0px 2px;
+}
+
+hr {
+	margin: 20px 0px;
+}
+
+img {
+	margin: 0px 80px;
+}
+
+.picturealbum { /* centers images */
+	text-align: center;
+}

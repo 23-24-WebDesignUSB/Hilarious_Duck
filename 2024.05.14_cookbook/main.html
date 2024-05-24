@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Cookbook</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="script.js" defer></script>
+        <!--the defer property makes it so it only runs after the page loads bc
+        updateRecipeHTML() was trying to access the elements before they had loaded-->
+    </head>
+    <body>
+        <div>
+            <button>Search</button>
+            <select>
+                <option value="name">Name</option>
+                <option value="max duration">Duration</option>
+                <option value="ingredients">Ingredients</option>
+            </select>
+            <input placeholder="Seach by name..." type="search">
+            <!--<input placeholder="Max duration" type="number"> -->
+            <!--<input placeholder="Search by ingredients..." type="search"> -->
+        </div>
+        <hr>
+        <div id="recipelist">
+        </div>
+        <hr>
+        <div class="picturealbum">
+            <img src="pancake.jpg" height="300px">
+            <img src="barszcz.jpg" height="300px">
+            <img src="spagetti.jpg" height="300px">
+        </div>
+    </body>
+</html>
+
