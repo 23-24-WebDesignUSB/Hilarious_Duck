@@ -1,3 +1,8 @@
+body {
+	background-color: #ffffff;
+}
+
+
 button { /* spaces buttons out horizontally */
 	margin: 0px 2px;
 }
