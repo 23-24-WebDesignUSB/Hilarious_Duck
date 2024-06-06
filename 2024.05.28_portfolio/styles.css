@@ -1,0 +1,170 @@
+/* defines primary and accent colors */
+
+:root {
+  --color-main: #373737; /*background*/
+  --color-accent: #272727; /*header & footer backgrouynd*/
+  --color-accent-2: #000000; /*borders*/
+  --color-text: #ffffff; /*text*/
+  --color-light: #707070; /*inverted button background*/
+}
+
+/* makes body no-margin, and sets background colors */
+
+body {
+  margin: 0px;
+  background-color: var(--color-main);
+  color: var(--color-text);
+}
+
+img {
+  margin: 5px;
+  height: 120px;
+}
+
+/* header & intro styling */
+
+.header {
+  padding: 10px;
+  background-color: var(--color-accent);
+  text-align: center;
+  font-size: 30px;
+}
+
+.introduction {
+  padding: 30px 10%;
+  text-align: center;
+  line-height: 1.4em;
+}
+
+/* button style */
+
+.browse-projects-button {
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 24px;
+  border: var(--color-accent-2) solid 4px;
+  color: var(--color-text);
+  background-color: var(--color-main);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  transition-duration: 0.4s;
+}
+
+.browse-projects-button:hover {
+  background-color: var(--color-light);
+}
+
+/* project showcase styling */
+
+.project {
+  display: flex;
+  margin: 100px 1.5%;
+  padding: 1% 0%;
+}
+
+.project-body {
+  padding: 0px 15px;
+}
+
+.project-body h1 {
+  float: left;
+  font-size: 40px;
+  padding-right: 10px;
+  color: var(--color-text);
+}
+
+.project-body h1 a {
+  color: var(--color-text);
+}
+
+.project-body p {
+  font-size: 16px;
+  line-height: 1.9em;
+}
+
+.project-media {
+  display: inline-flex;
+  padding: 10px;
+}
+
+/* if not small screen, isnt reduced motion, and supports scroll anims, do scroll anim */
+
+@media (prefers-reduced-motion: no-preference){ /* min-width: 526px*/
+  @supports (animation-timeline: view()){
+    .slide-in {
+      animation: slide-in linear;
+      animation-fill-mode: both;
+      animation-timeline: view();
+      animation-iteration-count: 1;
+      animation-range: entry 0% entry 150%;
+    }
+  }
+}
+
+@keyframes slide-in {
+  0% {transform: translateX(calc(-200%)); display: hide; z-index: -125}
+  1% {display: block; z-index: -125}
+  100% {transform: translateX(0%); z-index: -125}
+}
+
+@media (max-width: 525px) { /* restyles for small screen widths */
+  .project {
+    display: flex;
+    margin: 40px 0%;
+    padding: 0%;
+    text-align: center;
+  }
+
+  .project-body {
+    padding: 0px 15px;
+    animation: 3s infinite alternate slidein;
+  }
+
+  .project-body h1 {
+    float: none;
+    font-size: 30px;
+    padding-right: none;
+    color: var(--color-text);
+  }
+
+  .project-body h1 a {
+    color: var(--color-text);
+  }
+
+  .project-body p {
+    font-size: 16px;
+    line-height: 1.4em;
+  }
+
+  .project-media {
+    display: none;
+    padding: none;
+  }
+}
+
+/* project showcase page styling */
+
+body {
+  height: 100vh;
+}
+
+.project-showcase-header {
+  height: 20%;
+  padding: 10px;
+  background-color: var(--color-accent);
+  text-align: center;
+  font-size: 15px;
+}
+
+.project-showcase-header a button {
+  font-size: 18px;
+}
+
+.project-showcase-embed {
+  margin: 2%;
+  height: 70%
+}
+
+
+
+
+

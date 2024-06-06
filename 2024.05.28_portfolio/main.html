@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Thomas's JS Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="header"> <!--header -->
+            <h1>Thomas's JS Portfolio</h1>
+        </div>
+        <div><!--body -->
+            <div class="introduction">
+                <p>
+                    In sophmore year of high school, I took a class on web design. In this class, I learned many valuable skills for front-end development, including the basics of HTML and CSS, as well as improved my Javascript skills from what I had learned in previous computer science classes. This class improved not only my hard skills however, but invaluable soft skills, including effective collaboration, communication, mindfulness of deadlines, and, most important of all, the ability to learn and grow efficiently as a programmer.
+                    <br><br>
+                    This computer science class culminated in a final project in which we created a webpage to showcase all of my major projects throughout the year, the result of which you are seeing right now. Although not all of these projects are spectacularly designed or styled, I believe they reflect the progress which I have made throughout the year, and the progress which I will hopefully continue to make in years to come. Thank you for taking the time to check out my portfolio!
+                </p>
+                <button class="browse-projects-button" onclick="doScrollDown()">Browse Projects</button>
+            </div>
+            <div><!--projects -->
+                <div style="margin-bottom: -75px; margin-top: 25px;" id="scroll-marker"><br></div> <!-- marks where the button should scroll to -->
+                <div class="project" style="background-color: #edac13">
+                    <div class="project-body">
+                        <h1><a href="project-display-about-me.html">About Me</a></h1>
+                        <p class="slide-in" onclick="doRedirect('project-display-about-me.html')">
+                            The first project of the year, this project aimed to test our knowledge of HTML structure, including headers, paragraphs, lists, and video embeds, as well as our ability to use CSS styles. The content of the page itself descibed our hobbies, interests, and achievements, as well as basic background information about us. At this point, my HTML skills were rather limited, and I was not able to remove the default margin of the body or create flexboxes to space out the anchors, however despite this I believe I still managed to create a relatively aesthetic pleasing static page with the tools I had at the time.
+                        </p>
+                    </div>
+                    <div class="project-media">
+                        <img src="thumbnail-about-me.png"></img>
+                    </div>
+                </div>
+                <div class="project" style="background-color: #0d8014">
+                    <div class="project-body">
+                        <h1><a href="project-display-global-concern.html">Global Concern</a></h1>
+                        <p class="slide-in" onclick="doRedirect('project-display-global-concern.html')">
+                            For our second project, each member of our class chose a global issue which they were passionate about and created a webpage about their issue which was then presented to the rest of the class. The project required anchor elements for internal navigation, as well as a separate CSS file. Most importantly, this project was the first one in which we demonstrated our ability to use division elements, arguably the most important element in HTML. In the process of creating this project, for which I chose deforestation, I learned how to create a sidebar and a header with an image background, two design elements which quickly became some of my favorites to use in following projects.
+                        </p>
+                    </div>
+                    <div class="project-media">
+                        <img src="thumbnail-global-concern.png"></img>
+                    </div>
+                </div>
+                <div class="project" style="background-color: #d27dd4">
+                    <div class="project-body">
+                        <h1><a href="project-display-collectors-guide.html">Collector's Guide</a></h1>
+                        <p class="slide-in" onclick="doRedirect('project-display-collectors-guide.html')">
+                            For our next project, we were tasked with creating a 'Collector's Guide', consisting of a main page with links to several other webpages for each object in a collection of our choosing. This project focused on our use of relative links, as well as our ability to work in a group with a classmate. For my and my partner's project, we chose to make a webpage focused around staplers, rating several of the ones found around the school. As mentioned in the previous project, the sidebar and header image background components were also used in this project, along with a similar black-on-grey color scheme. Overall, I believe this project turned out well, showcasing effectively our knowledge of relative links.
+                        </p>
+                    </div>
+                    <div class="project-media">
+                        <img src="thumbnail-collectors-guide.png"></img>
+                    </div>
+                </div>
+                <div class="project" style="background-color: #4287f5">
+                    <div class="project-body">
+                        <h1><a href="project-display-internet-concern.html">Internet Concerns</a></h1>
+                        <p class="slide-in" onclick="doRedirect('project-display-internet-concern.html')">
+                            Our next project was unique in that it incorporated not only the use of our web design skills, namely animations and transitions, but also our knowledge regarding the social and ethical isues surrounding the Internet. I chose to research the issue of computer security, and included some resources for staying safe on the Internet. For the technical requirements, I added subtle transitions upon highlighting links. I again made use of the black-on-grey color scheme, combined with an image background header and a sidebar for ease of navigation. This was improved upon by the use of a gradient to slightly darker shade of grey for the background in order to draw the viewers' eyes downward naturally.
+                        </p>
+                    </div>
+                    <div class="project-media">
+                        <img src="thumbnail-internet-concern.png"></img>
+                    </div>
+                </div>
+                <div class="project" style="background-color: #62bd77">
+                    <div class="project-body">
+                        <h1><a href="project-display-buzzfeed-quiz.html">Buzzfeed-Style Quiz</a></h1>
+                        <p class="slide-in" onclick="doRedirect('project-display-buzzfeed-quiz.html')">
+                            Nearing the end of the year, the second-to-last project had the goal of testing what we had learned about forms in HTML, and, most importantly, Javascript, by having us create a quiz similar to those found on buzzfeed, with different results depending on your answers. For this project, I made a quiz to determine what fruit aligned with your personality based on scientific metrics such as vibes, and which seasons the fruits grow in. Although I had worked with Javascript previously, I had not ever integrated it into HTML, so using the two in conjunction was a fun challenge to which I feel I answered with a satisfactory solution.
+                        </p>
+                    </div>
+                    <div class="project-media">
+                        <img src="thumbnail-buzzfeed-quiz.png"></img>
+                    </div>
+                </div>
+                <div class="project" style="background-color: #e32614">
+                    <div class="project-body">
+                        <h1><a href="project-display-modifiable-cookbook.html">Modifiable Cookbook</a></h1>
+                        <p class="slide-in" onclick="doRedirect('project-display-modifiable-cookbook.html')">
+                            For our last project of the year (excluding the one you are viewing right now), we were tasked with creating a webpage to showcase recipes, and which would allow the user to add new recipes. Javascript being my 'native language' of programming languages so to speak, I greatly enjoyed this project and the challenges it presented. Although my final product was rather lacking in way of CSS styling, I am happy with the final result and the effort that I put into it (including making pancakes for the pictures!)
+                        </p>
+                    </div>
+                    <div class="project-media">
+                        <img src="thumbnail-modifiable-cookbook.png"></img>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <br>
+            <br>
+            <br>
+            <br>
+            <hr>
+            <p style="font-size: 80%; margin-bottom: 20px">Copyright © 2024 Thomas Sands. All Rights Reserved.</p>
+        </div>
+        <div>
+            <!-- i did the html equivalent of walking into a room and forgetting why u were there but im sure this div was going to be important somehow so im keeping it its like a housepet its my pet div -->
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
